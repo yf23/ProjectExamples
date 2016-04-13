@@ -1,0 +1,11 @@
+Readme
+
+Synopsis:   bench [ntrials [pctget [pctlarge [small_limit [large_limit [random_seed ]]]]]]
+
+Parameters:
+ntrials: total number of getmem plus freemem calls to randomly perform during this test. Default 10000.
+pctget: percent of the total getmem/freemem calls that should be getmem. Default 50.
+pctlarge: percent of the getmem calls that should request "large" blocks with a size greater than small_limit. Default 10.
+small_limit: largest size in bytes of a "small" block. Default 200.
+large_limit: largest size in bytes of a "large" block. Default 20000.
+random_seed: initial seed value for the random number generator. Default: system time-of-day clock
